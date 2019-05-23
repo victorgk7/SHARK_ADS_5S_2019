@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:padding="16dp"
+    tools:context="com.pesquisa.censo.PesquisaActivity">
+
+
+
+    <TextView
+        android:id="@+id/text_view_pergunta_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:freezesText="true"
+        android:text="Pergunta: 1/x"
+        android:textStyle="bold"
+        android:textColor="@android:color/black" />
+
+
+    <TextView
+        android:id="@+id/text_view_pergunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/radio_group"
+        android:layout_marginBottom="16dp"
+        android:freezesText="true"
+        android:text="Esta é a Pergunta\nEsta é a Pergunta\nEsta é a Pergunta"
+        android:textAlignment="gravity"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <RadioButton
+            android:id="@+id/radio_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:freezesText="true"
+            android:text="Opção 1" />
+
+        <RadioButton
+            android:id="@+id/radio_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:freezesText="true"
+            android:text="Opção 2" />
+
+        <RadioButton
+            android:id="@+id/radio_button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:freezesText="true"
+            android:text="Opção 3" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_confirm_next"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:freezesText="true"
+        android:text="Confirmar"
+        android:textColor="@color/corBranca"
+        android:textStyle="bold"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bnt_arredondados"/>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:padding="16dp"
+    tools:context="com.pesquisa.censo.TelaInicialActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Pesquisa Censo"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="40sp" />
+
+
+    <Button
+        android:id="@+id/button_start_pesquisa"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:text="Iniciar pesquisa"
+        android:fontFamily=""
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/corBranca"
+        android:textStyle="bold"
+        android:background="@drawable/bnt_arredondados"/>
+
+    <Button
+        android:id="@+id/sobreCensu"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bnt_arredondados"
+        android:text="Sobre o Censu"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/corBranca"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
